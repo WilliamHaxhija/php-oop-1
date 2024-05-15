@@ -11,13 +11,17 @@ class Movie {
         $title = $this->title;
         $director = $this->director;
         $duration = $this->duration;
-        return $title . ' ' . $director . ' ' . $duration;
+        return $title . ' - ' . $director . ' - ' . $duration;
     }
  }
 
  $interstellar = new Movie('Interstellar', 'Christopher Nolan');
  $interstellar->duration = '180min';
+
+ $pulpFiction = new Movie('Pulp Fiction', 'Quentin Tarantino');
+ $pulpFiction->duration = '120min';
  var_dump($interstellar->printMovieInfo());
+ var_dump($pulpFiction->printMovieInfo());
 ?>
 
 <!DOCTYPE html>
